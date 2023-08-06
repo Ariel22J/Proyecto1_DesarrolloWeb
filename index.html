@@ -1,0 +1,71 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Html 5 y CSS</title>
+<LINK href="estilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Ludwing Jimenez</p>
+           <nav> <!-- Menu tipo Navegador -->
+            <p id="colorstrip">
+                <a href="">Inicio</a>|
+                <a href="php.html" target="_blank">Php</a>|
+                <a href="Net.html">.Net</a> |
+                <a href="Java.html">Java</a> |
+            </p>
+        </nav>
+       </header>
+<figure align="justify">
+        <ul class="Lenguajes">
+		<h3>Lenguajes de Programación</h3>
+			<ol type="1" start="1"> <!-- LISTA ORDENADA  -->
+				<li >Paginas Web</li>
+					<ul class="vi2"> <!-- VIÑETAS  -->
+						<li>Jsp</li>
+						<li>Aspx</li>
+						<li>Php</li>
+					</ul>
+				<li>Aplicaciones</li>
+                <ul class="vi1", ul type="circle">
+					<li>Java</li>
+					<li>Visual Basic</li>
+					<li>C#</li></ul>
+                </ul>
+            </ul>
+		</figure>
+		<figure>
+			
+
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+        <script src="script.js"></script>
+            <form id="formulario">
+      <input type="text" name="txt_nombres" placeholder="Ingrese Nombres" required>
+      <input type="text" name="txt_apellidos" placeholder="Ingrese Apellidos" required>
+      <input type="number" name="txt_telefono" placeholder="Ingrese Numero Telefonico" required>
+      <input type="email" name="txt_correo" placeholder="Ingrese Correo Electronico" required>
+      <input type="date" name="txt_fn" placeholder="Ingrese Fecha Nacimiento" required>
+      <textarea name="txt_mensaje" placeholder="Ingrese el Mensaje"></textarea>
+    <input type="submit" class="boton" onclick="mostrarDatos()" value="Enviar">       
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+    </body>
+    <footer>
+            <p  align=center>Aprende a Programar
+                 Fácil y Rápido &copy;</p>
+    </footer>
+</html>
