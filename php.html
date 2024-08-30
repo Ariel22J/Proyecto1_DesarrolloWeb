@@ -1,21 +1,39 @@
-<! Doctype HTML>
-<html>
-    <head>
-        <title>Html 5 y CSS</title>
-<LINK href="estilo.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-       <header class="estilo_bloque">
-           <img class="img-circulo" src="img/foto_perfil.jpg">
-           <p>Ludwing Jimenez</p>
-           <nav> <!-- Menu tipo Navegador -->
-            <p id="colorstrip">
-                <a href="">Inicio</a>|
-                <a href="php.html" target="_blank">Php</a>|
-                <a href="Net.html">.Net</a> |
-                <a href="Java.html">Java</a> |
-            </p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <a href="index.html">Volver a la Tienda</a>
+            <a href="confirmacion.html">Confirmar Compra</a>
         </nav>
-       </header>
-    </body>
+    </header>
+
+    <main>
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Aquí se mostrarán los productos del carrito -->
+            </ul>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Tu Ubicación</h2>
+            <p>País: <span id="pais">Detectando...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Tienda en Línea</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+    <script src="geolocalizacion.js"></script>
+</body>
 </html>
