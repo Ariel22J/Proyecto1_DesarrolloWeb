@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#carrito-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#carrito-imagen {
+    width: 100px; /* Tamaño del logo del carrito */
+    margin-bottom: 20px;
+}
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    width: 18%; /* Ajuste para que quepan 5 productos por fila */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%; /* Asegura que la imagen llene el contenedor */
+    cursor: pointer;
+}
+
+.nombre-producto, .precio-producto {
+    margin: 5px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .producto {
+        width: 24%; /* Ajuste para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 48%; /* Ajuste para pantallas pequeñas */
+    }
+}

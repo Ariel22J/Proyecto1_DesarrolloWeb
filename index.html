@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a Nuestra Tienda</h1>
+        <h3>Integrantes del grupo: Ludwing Ariel Jimenez Jimenez, Kunji Brandon Lee Ramirez, Andrés Fernando Larios Rivera, Bryan Estuardo Sutuj Avila</h3>
+
+        <nav>
+            <a href="carrito.html">Ver Carrito Completo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section><p>Se desea realizar un sitio responsivo que utilice las tecnologías de HTML5/CSS3 y que almacene la información del lado del cliente donde se aprovecha el tema de la velocidad/interacción siendo un modelo de programación más sencillo que no requiere infraestructura de servidor.</p></section>
+        <!-- Sección del Carrito -->
+        <section id="carrito-section">
+            <h2>Arrastra los productos al carrito</h2>
+            <div id="carrito" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="img_carrito2.png" alt="Carrito de Compras" id="carrito-imagen">
+                <ul id="lista-carrito">
+                    <!-- Aquí se mostrarán los productos del carrito -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Productos -->
+        <section>
+            <h2>Productos Disponibles</h2>
+            <div id="productos">
+                <div class="producto">
+                    <img src="aceitesuli15.webp" alt="Aceite Suli 15" draggable="true" ondragstart="drag(event)" data-nombre="Aceite Suli 15" data-precio="15">
+                    <p class="nombre-producto">Aceite Suli</p>
+                    <p class="precio-producto">Q15</p>
+                </div>
+                <div class="producto">
+                    <img src="azucarmorena17.5.webp" alt="Azúcar Morena 17.5" draggable="true" ondragstart="drag(event)" data-nombre="Azúcar Morena 17.5" data-precio="17.5">
+                    <p class="nombre-producto">Azúcar Morena</p>
+                    <p class="precio-producto">Q17.5</p>
+                </div>
+                <div class="producto">
+                    <img src="incaparina8.70.webp" alt="Incaparina 8.70" draggable="true" ondragstart="drag(event)" data-nombre="Incaparina 8.70" data-precio="8.70">
+                    <p class="nombre-producto">Incaparina</p>
+                    <p class="precio-producto">Q8.70</p>
+                </div>
+                <div class="producto">
+                    <img src="saldemesa2.15.webp" alt="Sal de Mesa 2.15" draggable="true" ondragstart="drag(event)" data-nombre="Sal de Mesa 2.15" data-precio="2.15">
+                    <p class="nombre-producto">Sal de Mesa</p>
+                    <p class="precio-producto">Q2.15</p>
+                </div>
+                <!-- Agregar más productos si es necesario -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Tienda en Línea</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

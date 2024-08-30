@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+        <nav>
+            <a href="index.html">Volver a la Tienda</a>
+            <a href="confirmacion.html">Confirmar Compra</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Aquí se mostrarán los productos del carrito -->
+            </ul>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Tu Ubicación</h2>
+            <p>País: <span id="pais">Detectando...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nuestra Tienda en Línea</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+    <script src="geolocalizacion.js"></script>
+</body>
+</html>
